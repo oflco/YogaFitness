@@ -7,44 +7,44 @@ import webpackStream from 'webpack-stream';
 import webpack from 'webpack';
 import webpackConfig from './webpack.config.js';
 
-// [GulpTask-1] HTML: Copy all files (src => dist).
+// [GulpTask-1] HTML: Copy all files (src/* => dist/).
 gulp.task('html', function() 
 {
-    console.log("[GulpTask-1] HTML: Copy all files (src => dist).");
+    console.log("[GulpTask-1] HTML: Copy all files (src/*.html => dist/).");
 
     return gulp.src('src/*.html')
         .pipe(gulp.dest('dist/'));
 });
 
-// [GulpTask-2] CSS: Copy all files (src/css => dist/css).
+// [GulpTask-2] CSS: Copy all files (src/css/*.css => dist/css/).
 gulp.task('css', function() {
-    console.log("[GulpTask-2] CSS: Copy all files (src/css => dist/css).");
+    console.log("[GulpTask-2] CSS: Copy all files (src/css/*.css => dist/css/).");
 
     return gulp.src('src/css/*.css')
         .pipe(gulp.dest('dist/css/'));
 });
 
-// [GulpTask-3] WebpJpgConvert: Copy all files (src/img => dist/img).
+// [GulpTask-3] WebpJpgConvert: Copy all files (src/img/*.jpg => dist/img/).
 gulp.task('webpJpg', function () {
-    console.log("[GulpTask-3] WebpJpgConvert: Copy all files (src/img => dist/img).");
+    console.log("[GulpTask-3] WebpJpgConvert: Copy all files (src/img/*.jpg => dist/img/).");
 
     return gulp.src('src/img/*.jpg')
         .pipe(webp({ quality: 98 }))
-        .pipe(gulp.dest('dist/img/'));
+            .pipe(gulp.dest('dist/img/'));
 });
 
-// [GulpTask-4] WebpPngConvert: Copy all files (src/img => dist/img).
+// [GulpTask-4] WebpPngConvert: Copy all files (src/img/*.png => dist/img/).
 gulp.task('webpPng', function () {
-    console.log("[GulpTask-4] WebpPngConvert: Copy all files (src/img => dist/img).");
+    console.log("[GulpTask-4] WebpPngConvert: Copy all files (src/img/*.png => dist/img/).");
 
     return gulp.src('src/img/*.png')
         .pipe(webp({ quality: 98 }))
-        .pipe(gulp.dest('dist/img/'));
+            .pipe(gulp.dest('dist/img/'));
 });
 
-// [GulpTask-5] SVG: Copy all files (src/img => dist/img).
+// [GulpTask-5] SVG: Copy all files (src/img/*.svg => dist/img/).
 gulp.task('svg', function () {
-    console.log("[GulpTask-5] SVG: Copy all files (src/img => dist/img).");
+    console.log("[GulpTask-5] SVG: Copy all files (src/img/*.svg => dist/img/).");
 
     return gulp.src('src/img/*.svg')
         .pipe(gulp.dest('dist/img/'));
