@@ -1,0 +1,36 @@
+{
+  "name": "yogafitness",
+  "version": "1.0.0",
+  "description": "Yoga Fitness Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"gulp watch\" \"webpack --watch\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oflco/YogaFitness.git"
+  },
+  "author": "oflco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oflco/YogaFitness/issues"
+  },
+  "homepage": "https://github.com/oflco/YogaFitness#readme",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "concurrently": "^8.2.2",
+    "css-loader": "^6.9.0",
+    "gulp": "^4.0.2",
+    "gulp-webp": "^5.0.0",
+    "sass": "^1.69.7",
+    "sass-loader": "^13.3.3",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}
