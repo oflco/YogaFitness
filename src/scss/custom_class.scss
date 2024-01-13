@@ -71,4 +71,13 @@ body
             }
         }
     }
+
+    // Footer Class with Custom Footer Nav Row Class
+    footer
+    {
+        .footer-nav-row
+        {
+            border-bottom-color: $gray-500;
+        }
+    }
 }
