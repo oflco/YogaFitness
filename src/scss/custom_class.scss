@@ -39,4 +39,25 @@ body
             font-size: 4rem;
         }
     }
+
+    // Tabs Container Classes Section
+    .tabs-container-classes
+    {
+        .nav-item
+        {
+            .nav-link
+            {
+                &.active
+                {
+                    @extend
+                        .text-primary;
+                }
+
+                border-radius: 0.875rem;
+                @extend
+                    .fw-bold,
+                    .text-dark;
+            }
+        }
+    }
 }
