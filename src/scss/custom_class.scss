@@ -17,4 +17,26 @@ body
         background-size: cover;
         height: 56.25rem;
     }
+
+    // Custom Number Icon Class
+    .number-icon
+    {
+        @extend
+            .d-flex,
+            .rounded-circle,
+            .align-items-center,
+            .justify-content-center,
+            .border,
+            .border-primary,
+            .border-3,
+            .mb-3;
+        
+        width: 6.25rem;
+        height: 6.25rem;
+
+        span
+        {
+            font-size: 4rem;
+        }
+    }
 }
